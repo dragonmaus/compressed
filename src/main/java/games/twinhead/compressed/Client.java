@@ -41,9 +41,6 @@ public class Client implements ClientModInitializer {
 			} else if(entry.getKey().toString().contains("birch")){
 				itemColor = (state, view) -> 0x80A755;
 				blockColor = (state, view, pos, tintIndex) -> 0x80A755;
-			} else if(entry.getKey().toString().contains("mangrove")){
-				itemColor = (state, view) -> 0x8db127;
-				blockColor = (state, view, pos, tintIndex) -> 0x8db127;
 			}
 
 			ColorProviderRegistry.BLOCK.register(blockColor, (Block) entry.getValue());
